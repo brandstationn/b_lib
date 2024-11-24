@@ -1,12 +1,10 @@
 fx_version 'cerulean'
 game 'gta5'
-version '1.0.1'
+version '1.0.2'
 name '^2b_lib'
 author 'brandstation'
 description 'Library to run ^2brandstations^1 FiveM resources'
 
-github 'https://github.com/Force-Developing/force_lib'
-versioncheck 'https://raw.githubusercontent.com/Force-Developing/force_lib/main/version.txt'
 lua54 'yes'
 
 dependencys {
