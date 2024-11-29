@@ -15,5 +15,5 @@ CreateThread(function()
 end)
 
 exports('Fetch', function()
-    return lib.Inform, lib.Funcs, bs;
+    return lib.Inform, lib.Funcs, bs, sv_bs;
 end)
