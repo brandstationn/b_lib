@@ -1,6 +1,6 @@
 fx_version 'cerulean'
 game 'gta5'
-version '1.0.2'
+version '1.0.3'
 name '^2b_lib'
 author 'brandstation'
 description 'Library to run ^2brandstations^1 FiveM resources'
