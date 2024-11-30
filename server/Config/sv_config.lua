@@ -11,15 +11,15 @@ sv_bs.AdminHandle = {
 
 sv_bs.Webhooks = {
     ['b_cardealer'] = {
-        ['cardealerOrders'] = "",
-        ['vehiclePurchases'] = ""
+        ['cardealerOrders'] = false, -- ""
+        ['vehiclePurchases'] = false, -- ""
     },
     ['b_dispatch'] = {
-        ['newDispatch'] = "",
+        ['newDispatch'] = false, -- ""
 
     },
     ['b_drugsell'] = {
-        ['sellDrugs'] = ""
+        ['sellDrugs'] = false, -- ""
     },
 
     ['backup'] = ""

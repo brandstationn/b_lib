@@ -1,6 +1,6 @@
 fx_version 'cerulean'
 game 'gta5'
-version '1.0.3'
+version '1.0.4'
 name '^2b_lib'
 author 'brandstation'
 description 'Library to run ^2brandstations^1 FiveM resources'
@@ -9,6 +9,11 @@ lua54 'yes'
 
 dependencys {
     'oxmysql' -- This can be oxmysql or mysql-async, i recommend oxmysql for better performance!
+}
+
+shared_scripts {
+    'shared/*',
+    'shared/auto_fetch/*',
 }
 
 client_scripts {
@@ -33,11 +38,6 @@ server_scripts {
     'server/Inits/Framework/QBCore.lua',
     'client/sv_callbacks.lua',
     'server/Inits/Funcs/*',
-}
-
-shared_scripts {
-    'shared/*',
-    'shared/auto_fetch/*',
 }
 
 files {

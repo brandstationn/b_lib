@@ -118,14 +118,15 @@ function lib.Inform:Init()
         local missingData = 'Unknown'
         local missingImg = bs.missingIMG
 
+
         info = {
-            identifier = player.socialnumber or player.identifier or player.id or missingData,
+            identifier = player.identifier or player.id or missingData,
             src = player.source or missingData,
 
-            firstname = player.character.firstname or missingData,
-            lastname = player.character.lastname or missingData,
-            dob = player.character.socialnumber or player.character.dob or missingData,
-            phonenumber = player.character.phone_number or missingData,
+            firstname = player.variables.firstName or missingData,
+            lastname = player.variables.lastName or missingData,
+            dob = player.variables.dateofbirth or missingData,
+            phonenumber = player.phone_number or missingData,
             img = player.character.image or missingImg,
 
             jobName = player.job.name or missingData,

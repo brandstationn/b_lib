@@ -29,13 +29,13 @@ function lib.Inform:Init()
 
         local playerData = lib.Framework.GetPlayerData()
         info = {
-            identifier = playerData.character.socialnumber or playerData.identifier or playerData.id or missingData,
+            identifier = playerData.identifier or missingData,
 
-            firstname = playerData.character.firstname or missingData,
-            lastname = playerData.character.lastname or missingData,
-            dob = playerData.character.socialnumber or playerData.character.dob or missingData,
-            phonenumber = playerData.character.phone_number or missingData,
-            img = playerData.character.image or missingImg,
+            firstname = playerData.firstName or missingData,
+            lastname = playerData.lastName or missingData,
+            dob = playerData.dateofbirth or playerData.character.dob or missingData,
+            phonenumber = playerData.phone_number or missingData,
+            img = playerData.image or missingImg,
 
             jobName = playerData.job.name or missingData,
             gradeLabel = playerData.job.grade_label or missingData,
@@ -55,8 +55,9 @@ RegisterNetEvent("esx:setJob", function(job)
     TriggerEvent("b_lib:plyJobUpdate", lib.Utils:FormatJob(job))
 end)
 
-RegisterNetEvent("esx:playerLoaded", function()
+RegisterNetEvent("esx:playerLoaded", function(player)
     Wait(1)
+    local job = player.job.name -- change this if needed
     shared:Print("Character Loaded: sending new event...", 'info')
-    TriggerEvent('b_lib:plyCharacterLoaded')
+    TriggerEvent('b_lib:plyCharacterLoaded', tostring(job))
 end)
