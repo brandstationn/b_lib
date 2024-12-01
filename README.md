@@ -1,5 +1,5 @@
 # b_lib
 Library for my scripts.
 
-
-Docs will come soon. For help open ticket via discord.
+Check out documentation for this library below:
+https://app.gitbook.com/o/PySpgwbpxP2oERnACjIg/s/bTk8mX0VZGmhMACnrN4V/b_lib/docs
