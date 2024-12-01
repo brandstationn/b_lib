@@ -2,4 +2,5 @@
 Library for my scripts.
 
 Check out documentation for this library below:
-https://app.gitbook.com/o/PySpgwbpxP2oERnACjIg/s/bTk8mX0VZGmhMACnrN4V/b_lib/docs
+[![Documentation](https://img.shields.io/badge/Docs-GitBook-blue?style=for-the-badge)](https://docs.brandstation.store/b_lib/docs)
+
