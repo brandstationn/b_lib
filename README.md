@@ -1,4 +1,4 @@
-# b_lib
+# brandstation Library
 Library for my scripts.
 
 Check out the documentation for this library below:
