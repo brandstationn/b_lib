@@ -31,11 +31,10 @@ function lib.Inform:Init()
         info = {
             identifier = playerData.identifier or missingData,
 
-            firstname = playerData.firstName or missingData,
-            lastname = playerData.lastName or missingData,
+            firstname = playerData.firstName or playerData.firstname or missingData,
+            lastname = playerData.lastName or playerData.lastname or missingData,
             dob = playerData.dateofbirth or playerData.character.dob or missingData,
             phonenumber = playerData.phone_number or missingData,
-            img = playerData.image or missingImg,
 
             jobName = playerData.job.name or missingData,
             gradeLabel = playerData.job.grade_label or missingData,

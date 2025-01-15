@@ -1,6 +1,6 @@
 fx_version 'cerulean'
 game 'gta5'
-version '1.0.4'
+version '1.0.5'
 name '^2b_lib'
 author 'brandstation'
 description 'Library to run ^2brandstations^1 FiveM resources'
@@ -20,9 +20,9 @@ client_scripts {
     'client/Funcs/*',
     'client/lib.lua',
 
-    --'client/Inits/Framework/Custom.lua',
+    'client/Inits/Framework/Custom.lua',
     --'client/Inits/Framework/ESX.lua',
-    'client/Inits/Framework/QBCore.lua',
+    --'client/Inits/Framework/QBCore.lua',
     'client/cl_callbacks.lua',
     'client/Inits/Funcs/*',
 }
@@ -33,9 +33,9 @@ server_scripts {
     'server/Config/*',
     'server/lib.lua',
 
-    --'server/Inits/Framework/Custom.lua',
+    'server/Inits/Framework/Custom.lua',
     --'server/Inits/Framework/ESX.lua',
-    'server/Inits/Framework/QBCore.lua',
+    --'server/Inits/Framework/QBCore.lua',
     'client/sv_callbacks.lua',
     'server/Inits/Funcs/*',
 }

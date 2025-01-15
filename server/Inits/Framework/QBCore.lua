@@ -2,9 +2,6 @@ lib.Inform = {};
 
 function lib.Inform:Init()
     function lib.Inform:GetPlayer(id)
-        print(type(id))
-
-        --print(json.encode(lib.Framework.Functions.GetPlayer(id), {indent = true}))
         return lib.Framework.Functions.GetPlayer(id)
     end
 
